@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo BMR</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" oninput="calc()">
+        <div>
+            <label for="">Età</label>
+            <input type="text" name="" id="eta">
+        </div>
+        <div>
+            <label for="sesso">Sesso</label>
+            <select name="" id="sesso">
+                <option value="M">Uomo</option>
+                <option value="F">Donna</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Altezza</label>
+            <input type="text" name="" id="altezza">
+        </div>
+        <div>
+            <label for="">Peso</label>
+            <input type="text" name="" id="peso">
+        </div>
+        <div>
+            <label for="attivita">Attività fisica</label>
+            <select name="attivita" id="attivita">
+                <option value="1.2">Sedentario</option>
+                <option value="1.375">Leggermente attivo</option>
+                <option value="1.55">Moderatamente attivo</option>
+                <option value="1.725">Molto attivo</option>
+                <option value="1.9">Estremamente attivo</option>
+            </select>
+        </div>
+        <div class="scelta">
+            <label for="unita">Unità di misura:</label>
+            <div>
+                <input type="radio" name="unita" id="unita">
+                <label for="">Kcal</label>
+            </div>
+            <div>
+                <input type="radio" name="unita" id="unita">
+                <label for="">Kilojoules</label>  
+            </div>
+        </div>
+        <div class="scelta">
+            <label for="sistema">Sistema di misura:</label>
+            <div>
+                <input type="radio" name="sistema" id="metrico">
+                <label for="sistema">Metrico (cm)</label>
+            </div>
+            <div>
+                <input type="radio" name="sistema" id="imperiale">
+                <label for="sistema">Imperiale (pollici)</label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
